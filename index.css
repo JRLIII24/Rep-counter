@@ -1,41 +1,74 @@
 body {
     background-image: url("https://images.pexels.com/photos/1552242/pexels-photo-1552242.jpeg");
     background-size: cover;
+    background-position: center;
     font-family: 'Oswald', sans-serif;
     font-weight: bold;
     text-align: center;
+    font-size: 18px; /* Increase the base font size */
+}
 
+@media (max-width: 600px) {
+    body {
+        background-size: cover;
+        background-position: center top;
+        font-size: 16px; /* Adjust font size for smaller screens */
+    }
+}
+
+@media (min-width: 600px) and (max-width: 1200px) {
+    body {
+        background-size: cover;
+        background-position: center;
+        font-size: 18px; /* Adjust font size for medium screens */
+    }
+}
+
+@media (min-width: 1200px) {
+    body {
+        background-size: cover;
+        background-position: center;
+        font-size: 20px; /* Adjust font size for larger screens */
+    }
 }
 
 h1 {
     color: white;
     margin-top: 10px;
     margin-bottom: 10px;
+    font-size: 2.5em; /* Increase font size */
 }
 
 h2 {
     color: white;
-    font-size: 50px;
+    font-size: 2em; /* Increase font size */
     margin-top: 0;
     margin-bottom: 20px;
 }
+
 .glow {
-    text-shadow: 0 4px 30px grey ;
+    text-shadow: 0 4px 30px grey;
 }
 
 button {
     border: none;
-    padding-top: 10px;
-    padding-bottom: 10px;
+    padding: 15px 20px; /* Increase padding */
     color: black;
     font-weight: bold;
-    width: 200px;
-    margin-bottom: 5px;
+    font-size: 1.2em; /* Increase font size */
+    width: 220px; /* Increase width */
+    margin-bottom: 10px; /* Increase margin */
     border-radius: 5px;
+    transition: box-shadow 0.3s ease; /* Add transition for glowing effect */
+}
+
+button:active {
+    box-shadow: 0 0 10px 5px rgba(255, 255, 255, 0.7); /* Glowing effect on click */
 }
 
 p {
     color: white;
+    font-size: 1.2em; /* Increase font size */
 }
 
 #increment-btn {
@@ -47,7 +80,8 @@ p {
 }
 
 .counter {
-    border: 10px solid white; opacity: 0.7;
+    border: 10px solid white;
+    opacity: 0.7;
     border-radius: 10px;
     border-top: solid grey 10px;
     border-bottom: solid grey 10px;
@@ -55,6 +89,29 @@ p {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    
     width: fit-content;
+}
+
+@media (max-width: 600px) {
+    .counter {
+        width: 100%;
+        border-width: 5px;
+        padding: 10px;
+    }
+}
+
+@media (min-width: 600px) and (max-width: 1200px) {
+    .counter {
+        width: 80%;
+        border-width: 8px;
+        padding: 15px;
+    }
+}
+
+@media (min-width: 1200px) {
+    .counter {
+        width: 60%;
+        border-width: 10px;
+        padding: 20px;
+    }
 }
