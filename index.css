@@ -1,0 +1,60 @@
+body {
+    background-image: url("https://images.pexels.com/photos/1552242/pexels-photo-1552242.jpeg");
+    background-size: cover;
+    font-family: 'Oswald', sans-serif;
+    font-weight: bold;
+    text-align: center;
+
+}
+
+h1 {
+    color: white;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+h2 {
+    color: white;
+    font-size: 50px;
+    margin-top: 0;
+    margin-bottom: 20px;
+}
+.glow {
+    text-shadow: 0 4px 30px grey ;
+}
+
+button {
+    border: none;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    color: black;
+    font-weight: bold;
+    width: 200px;
+    margin-bottom: 5px;
+    border-radius: 5px;
+}
+
+p {
+    color: white;
+}
+
+#increment-btn {
+    background: darkgrey;
+}
+
+#save-btn {
+    background: white;
+}
+
+.counter {
+    border: 10px solid white; opacity: 0.7;
+    border-radius: 10px;
+    border-top: solid grey 10px;
+    border-bottom: solid grey 10px;
+    display: inline-flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+    width: fit-content;
+}
